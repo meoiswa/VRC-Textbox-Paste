@@ -1,7 +1,7 @@
 # VRC-Textbox-Paste
 Includes a button in VRChat for pasting your clipboard on the last active text box
 
-REQUIRES UI EXPANSION KIT
+REQUIRES [UI EXPANSION KIT](https://github.com/knah/VRCMods/releases)
 
 ## Usage
 
