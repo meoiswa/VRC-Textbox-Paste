@@ -38,6 +38,6 @@ using VRC_Textbox_Paste;
 [assembly: AssemblyFileVersion("1.0.0.0")]
 
 //MelonLoader Mod Info
-[assembly: MelonInfo(typeof(TextboxPasteMod), "VRC Textbox Paste", "0.1", "Meoiswa")]
+[assembly: MelonInfo(typeof(TextboxPasteMod), "VRC Textbox Paste", "1.0", "Meoiswa")]
 [assembly: MelonGame("VRChat", "VRChat")]
 [assembly: MelonAdditionalDependencies("UIExpansionKit")]
