@@ -82,7 +82,7 @@ namespace VRC_Textbox_Paste
     {
         public static void Prefix(InputField __instance)
         {
-            MelonLogger.Msg($"An InputField was selected: {__instance} ({__instance.name})");
+            MelonDebug.Msg($"An InputField was selected: {__instance} ({__instance.name})");
             LastInputSelected.SetLastInput(__instance);
         }
     }
@@ -92,7 +92,7 @@ namespace VRC_Textbox_Paste
     {
         public static void Prefix(TMP_InputField __instance)
         {
-            MelonLogger.Msg($"A TMP_InputField was selected: {__instance} ({__instance.name})");
+            MelonDebug.Msg($"A TMP_InputField was selected: {__instance} ({__instance.name})");
             LastInputSelected.SetLastInput(__instance);
         }
     }
@@ -102,7 +102,7 @@ namespace VRC_Textbox_Paste
     {
         public static void Prefix(VRCUrlInputField __instance)
         {
-            MelonLogger.Msg($"A VRCUrlInputField was selected: {__instance} ({__instance.name})");
+            MelonDebug.Msg($"A VRCUrlInputField was selected: {__instance} ({__instance.name})");
             LastInputSelected.SetLastInput(__instance);
         }
     }

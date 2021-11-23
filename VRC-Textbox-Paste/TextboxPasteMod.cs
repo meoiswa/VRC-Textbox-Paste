@@ -14,7 +14,7 @@ namespace VRC_Textbox_Paste
         {
             if (MelonHandler.Mods.Any(it => it.Info.Name == "UI Expansion Kit"))
             {
-                MelonLogger.Msg("Adding UIExpansionKit buttons");
+                MelonDebug.Msg("Adding UIExpansionKit buttons");
                 LastInputSelected.Init();
             }
             else
