@@ -19,6 +19,7 @@ namespace VRC_Textbox_Paste
         [MethodImpl(MethodImplOptions.NoInlining)]
         public static void Init()
         {
+            ExpansionKitApi.GetExpandedMenu(ExpandedMenu.QuickMenu).AddSimpleButton("Send 'Copy'", SendCopyEvent);
             ExpansionKitApi.GetExpandedMenu(ExpandedMenu.QuickMenu).AddSimpleButton("Send 'Paste'", SendPasteEvent);
             ExpansionKitApi.GetExpandedMenu(ExpandedMenu.QuickMenu).AddSimpleButton("Send 'Return'", SendPasteEvent);
         }
@@ -42,6 +43,22 @@ namespace VRC_Textbox_Paste
             Input = null;
             TmpInput = null;
             VUInput = input;
+        }
+
+        public static void SendCopyEvent()
+        {
+            if (Input != null)
+            {
+                Input.ProcessEvent(Event.KeyboardEvent("^C"));
+            }
+            else if (TmpInput != null)
+            {
+                TmpInput.ProcessEvent(Event.KeyboardEvent("^C"));
+            }
+            else if (VUInput != null)
+            {
+                VUInput.ProcessEvent(Event.KeyboardEvent("^C"));
+            }
         }
 
         public static void SendPasteEvent()
